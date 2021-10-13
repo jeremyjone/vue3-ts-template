@@ -1,0 +1,17 @@
+# Editor configuration, see http://editorconfig.org
+
+root = true
+
+[*] # 适用所有文件
+charset = utf-8
+indent_style = space               # tab | space
+indent_size = 4                    # 缩进
+end_of_line = crlf                 # lf | cr | crlf
+trim_trailing_whitespace = true    # 自动切掉首尾空格
+insert_final_newline = true        # 末尾空行
+
+[*.{js,ts,vue,jsx,tsx}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
