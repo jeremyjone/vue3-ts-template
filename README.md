@@ -3,8 +3,11 @@
 工程化的模板。模板包括：
 
 [Vue 3.x](https://github.com/vuejs/vue-next)
+
 [Vue Router 4.x](https://github.com/vuejs/vue-router-next)
+
 [Axios](https://github.com/axios/axios)
+
 [Vuex 4.x](https://github.com/vuejs/vuex/tree/4.0)
 
 提供了测试组件
@@ -33,7 +36,7 @@ npm install -g degit
 然后可以下载模板
 
 ```sh
-npx degit jeremyjone/vue3-ts-template#main <project-name>
+npx degit jeremyjone/vue3-ts-template <project-name>
 ```
 
 #### 方法二
