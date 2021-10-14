@@ -37,6 +37,8 @@ module.exports = {
   },
   rules: {
     // 关于 eslint 更多规则可以查阅 https://eslint.org/docs/rules
+    // airbnb 风格指南：https://github.com/airbnb/javascript
+    // airbnb 中文指南：https://github.com/lin-123/javascript
 
     // 配置 console 与 debugger
     "no-console":
@@ -49,45 +51,45 @@ module.exports = {
     "prettier/prettier": ["error", { endOfLine: "auto" }],
 
     // 【必须】缩进 2 个空格
-    indent: [
-      "error",
-      2,
-      { SwitchCase: 1, ObjectExpression: 1, offsetTernaryExpressions: true }
-    ],
+    // indent: [
+    //   "error",
+    //   2,
+    //   { SwitchCase: 1, ObjectExpression: 1, offsetTernaryExpressions: true }
+    // ],
     // 【必须】换行符风格
-    "linebreak-style": [
-      "error",
-      process.platform === "win32" ? "windows" : "unix"
-    ],
-    // 【必须】双引号
-    quotes: ["error", "double", { avoidEscape: true }],
+    // "linebreak-style": [
+    //   "error",
+    //   process.platform === "win32" ? "windows" : "unix"
+    // ],
+    // 【必须】单引号
+    // quotes: ["error", "single", { avoidEscape: true }],
     // 【必须】始终适用分号
-    semi: ["error", "always"],
+    // semi: ["error", "always"],
     // 【必须】驼峰命名
-    camelcase: ["error", { properties: "never" }],
+    // camelcase: ["error", { properties: "never" }],
     // 【必须】对象短写
-    "object-shorthand": ["error", "always"],
-    // 【必须】数组保持两侧间距
-    "array-bracket-spacing": [
-      "error",
-      "never",
-      {
-        objectsInArrays: false,
-        arraysInArrays: false
-      }
-    ],
+    // "object-shorthand": ["error", "always"],
+    // 【必须】数组不要保持两侧间距
+    // "array-bracket-spacing": [
+    //   "error",
+    //   "never",
+    //   {
+    //     objectsInArrays: false,
+    //     arraysInArrays: false
+    //   }
+    // ],
     // 【必须】全等
-    eqeqeq: ["error", "always"],
+    // eqeqeq: ["error", "always"],
     // 【必须】数组回调方法强制执行 return 语句
-    "array-callback-return": "error",
+    // "array-callback-return": "error",
     // 【必须】箭头函数中箭头保持两侧间距
-    "arrow-spacing": "error",
+    // "arrow-spacing": "error",
     // 【必须】视 var 为块作用域
-    "block-scoped-var": "error",
+    // "block-scoped-var": "error",
     // 【必须】同行块级内容保持两侧间距
-    "block-spacing": "error",
+    // "block-spacing": "error",
     // 【必须】大括号样式，允许单行
-    "brace-style": ["error", "1tbs", { allowSingleLine: true }],
+    // "brace-style": ["error", "1tbs", { allowSingleLine: true }],
 
     // 关闭 ts 声明 any 的报错
     // "@typescript-eslint/no-explicit-any": "off",

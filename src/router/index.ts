@@ -6,19 +6,19 @@
  * @Description: 路由配置文件
  */
 
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "@/pages/Home.vue";
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Home from '@/pages/Home.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
     // 匹配全部其他内容
-    path: "/:pathMatch(.*)*",
-    component: () => import(/* webpackChunkName: "404" */ "@/pages/404.vue")
+    path: '/:pathMatch(.*)*',
+    component: () => import(/* webpackChunkName: "404" */ '@/pages/404.vue')
   }
 ];
 

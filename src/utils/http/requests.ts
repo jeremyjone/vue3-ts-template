@@ -6,7 +6,7 @@
  * @Description: 网络请求方法
  */
 
-import axios from ".";
+import axios from '.';
 
 /**
  * @param  promise
@@ -130,18 +130,18 @@ export function download(
   return new Promise((resolve, reject) => {
     axios({
       url,
-      responseType: "blob",
-      method: "GET",
+      responseType: 'blob',
+      method: 'GET',
       ...config
     })
       .then(result => {
         const fileURL = window.URL.createObjectURL(
           new Blob([result.data], { type: filetype })
         );
-        const fileLink = document.createElement("a");
+        const fileLink = document.createElement('a');
 
         fileLink.href = fileURL;
-        fileLink.setAttribute("download", filename);
+        fileLink.setAttribute('download', filename);
         document.body.appendChild(fileLink);
 
         fileLink.click();
