@@ -28,10 +28,17 @@ module.exports = {
   plugins: ["vue", "@typescript-eslint"],
   parser: "vue-eslint-parser",
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
+    },
     "import/resolver": {
       alias: {
         map: [["@", "./src"]],
         extensions: [".js", ".jsx"]
+      },
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json'
       }
     }
   },

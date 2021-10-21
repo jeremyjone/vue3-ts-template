@@ -28,8 +28,7 @@
     },
     "lint-staged": {
         "*.{vue,js,ts,jsx,tsx}": [
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ]
     },
     "dependencies": {
@@ -47,7 +46,7 @@
         "@types/jest": "^27.0.2",
         "@types/node": "^16.10.3",
         "@typescript-eslint/eslint-plugin": "^5.0.0",
-        "@typescript-eslint/parser": "^5.0.0",
+        "@typescript-eslint/parser": "^5.1.0",
         "@vitejs/plugin-vue": "^1.2.5",
         "@vue/babel-plugin-jsx": "^1.1.0",
         "@vue/compiler-sfc": "^3.0.5",
@@ -61,7 +60,8 @@
         "eslint-config-airbnb-typescript": "^14.0.1",
         "eslint-config-prettier": "^8.3.0",
         "eslint-import-resolver-alias": "^1.1.2",
-        "eslint-plugin-import": "^2.25.1",
+        "eslint-import-resolver-typescript": "^2.5.0",
+        "eslint-plugin-import": "^2.25.2",
         "eslint-plugin-jest": "^25.0.5",
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-vue": "^7.19.1",
