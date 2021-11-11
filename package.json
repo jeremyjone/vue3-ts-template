@@ -23,14 +23,14 @@
         "lint": "eslint src/**/*.{js,vue,ts,jsx,tsx}",
         "lint:fix": "eslint src/**/*.{js,vue,ts,jsx,tsx} --fix",
         "lint:create": "eslint --init",
+        "lint:all": "eslint --fix",
         "lint-staged": "lint-staged",
         "test:unit": "jest --passWithNoTests",
         "commit": "git-cz"
     },
     "lint-staged": {
         "*.{vue,js,ts,jsx,tsx}": [
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ]
     },
     "dependencies": {

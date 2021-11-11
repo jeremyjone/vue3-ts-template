@@ -1,14 +1,14 @@
-import { mount } from "@vue/test-utils";
-import WelcomeComponent from "@/components/Welcome.vue";
+import { mount } from '@vue/test-utils';
+import WelcomeComponent from '@/components/Welcome.vue';
 
-describe("Welcome Component Test", () => {
+describe('Welcome Component Test', () => {
   const wrapper = mount(WelcomeComponent, {
-    props: { msg: "Hello Test!" }
+    props: { msg: 'Hello Test!' }
   });
 
-  it("load compoent", () => {
+  it('load compoent', () => {
     const html = wrapper.text();
     console.log(html);
-    expect(html).toContain("Hello Test!");
+    expect(html).toContain('Hello Test!');
   });
 });
