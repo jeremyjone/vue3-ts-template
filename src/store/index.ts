@@ -2,7 +2,7 @@
  * @Author: JeremyJone
  * @Date: 2021-10-12 16:18:03
  * @LastEditors: JeremyJone
- * @LastEditTime: 2021-10-25 14:54:47
+ * @LastEditTime: 2022-01-12 15:41:07
  * @Description: 状态管理文件
  */
 
@@ -17,13 +17,25 @@ export interface State {
 export const key: InjectionKey<Store<State>> = Symbol('store_key');
 
 export default createStore({
+  strict: true,
+
   state: {
     // TODO: 根据实际内容修改
     count: 0
   },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {
+    /**
+     * 模块可以在这里填写，也可以分多个文件，建议分多个文件
+     */
+    // moduleA: {
+    //   namespaced: true,
+    //   state: {},
+    //   mutations: {},
+    //   actions: {}
+    // }
+  }
 });
 
 /**

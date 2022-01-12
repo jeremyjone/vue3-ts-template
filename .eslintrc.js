@@ -120,6 +120,14 @@ module.exports = {
         svg: 'always',
         math: 'always'
       }
+    ],
+    // 解决 vuex 给 state 赋值报错
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state']
+      }
     ]
   }
 };
